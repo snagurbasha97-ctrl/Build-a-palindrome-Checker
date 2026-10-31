@@ -1,0 +1,16 @@
+
+# Palindrome Checker
+
+text = input("Enter a word or sentence: ")
+
+# Normalize the input
+cleaned_text = text.replace(" ", "").lower()
+
+# Reverse the string
+reversed_text = cleaned_text[::-1]
+
+# Check palindrome
+if cleaned_text == reversed_text:
+    print("It is a Palindrome!")
+else:
+    print("It is not a Palindrome!")
